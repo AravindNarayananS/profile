@@ -176,8 +176,7 @@ const App: React.FC = () => {
               {/* Profile Picture Placeholder */}
               <Avatar
                 alt="https://placehold.co/128x128/000000/FFFFFF?text=JD"
-                // src={"/profile-pic.jpg"}
-                 src={`${process.env.PUBLIC_URL}/profile-pic.jpg`}
+                src="/profile-pic.jpg"
                 sx={{
                   width: { xs: 96, sm: 128 },
                   height: { xs: 96, sm: 128 },
