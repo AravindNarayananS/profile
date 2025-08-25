@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import profilePic from './Asset/profile-pic.jpg';
 import {
   Typography,
   Button,
@@ -175,8 +176,8 @@ const App: React.FC = () => {
             <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
               {/* Profile Picture Placeholder */}
               <Avatar
-                alt="https://placehold.co/128x128/000000/FFFFFF?text=JD"
-                src="/profile-pic.jpg"
+                 alt="https://placehold.co/128x128/000000/FFFFFF?text=JD" 
+                 src={profilePic}
                 sx={{
                   width: { xs: 96, sm: 128 },
                   height: { xs: 96, sm: 128 },
