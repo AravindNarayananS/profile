@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import profilePic from './Asset/profile-pic.jpg';
+import profilePic from './Asset/profile-pic.JPG';
 import {
   Typography,
   Button,
