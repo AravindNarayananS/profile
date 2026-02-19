@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import profilePic from "../Asset/profile-pic.JPG";
+import profilePic from "../Asset/profile-pic.jpg";
 import {
   Typography,
   Button,
@@ -110,6 +110,7 @@ const PortfolioPage: React.FC = () => {
   const theme = useMemo(() => getAppTheme(mode), [mode]);
 
   return (
+    
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Box
@@ -198,7 +199,7 @@ const PortfolioPage: React.FC = () => {
                   Aravind
                 </Typography>
                 <Typography variant="h6" sx={{ fontWeight: 300 }}>
-                  Software Engineer | Web Developer
+                  Software Engineer
                 </Typography>
               </Box>
             </Box>
@@ -243,7 +244,7 @@ const PortfolioPage: React.FC = () => {
               </Button>
               <Button
                 component="a"
-                href="https://mail.google.com/mail/?view=cm&to=aravindnarayanan4296@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&to=aravindnarayanans4296@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{

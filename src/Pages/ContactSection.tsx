@@ -37,7 +37,7 @@ function ContactSection() {
           variant="contained"
           color="primary"
           component="a"
-          href="https://mail.google.com/mail/?view=cm&to=aravindnarayanan4296@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&to=aravindnarayanans4296@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
           sx={{

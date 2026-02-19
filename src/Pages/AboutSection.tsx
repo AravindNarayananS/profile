@@ -33,21 +33,31 @@ const AboutSection = () => {
             "& strong": { fontWeight: 700, color: "primary.main" },
           }}
         >
-          Experienced Full-Stack Developer specialising in responsive,
-          enterprise-grade web applications built with <strong>React</strong>.
-          Demonstrated expertise through vendor engagement with{" "}
-          <Link
-            href="https://www.siemens.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            underline="hover"
-          >
-            Siemens
-          </Link>{" "}
-          , contributing to their digital platforms including comprehensive
-          facility management systems. Successfully delivered critical
-          functionality across multiple modules encompassing space management,
-          inventory control, and maintenance operations.
+          Full-stack developer with experience delivering secure SaaS
+          applications in regulated environments. Strong expertise in React,
+          TypeScript, C#, .NET, Node.js, and Express, building scalable APIs and
+          front-end architectures. Passionate about clean code, performance
+          optimisation, and Agile productdriven development. Skilled at cloud
+          deployment and CI/CD automation using Azure and AWS
+        </Typography>
+
+        {/* Certifications */}
+        <Typography
+          variant="h6"
+          sx={{ fontWeight: "bold", mb: 1, color: "text.primary" }}
+        >
+          Certifications
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            mb: 3,
+            color: "text.secondary",
+            "& strong": { fontWeight: 700, color: "primary.main" },
+          }}
+        >
+          Advanced React – <strong>Meta</strong>&nbsp;|&nbsp; Node.Js + Express –
+          <strong>IBM</strong>&nbsp;|&nbsp; React Js – <strong>Great Learning</strong>&nbsp;|&nbsp; Python – <strong>OneTeam</strong>
         </Typography>
 
         {/* Technical Expertise */}
