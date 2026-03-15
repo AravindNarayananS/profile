@@ -1,7 +1,8 @@
+//MUI
 import { Typography, Box } from "@mui/material";
+//Icons
 import { Work as WorkIcon } from "@mui/icons-material";
 
-// Import your projects data
 import ProjectCard from "../Components/projectCard";
 import { projects } from "../Components/projectData";
 

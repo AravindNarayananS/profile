@@ -1,4 +1,3 @@
-
 interface Project {
   title: string;
   description: string;
@@ -9,26 +8,24 @@ interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Project Alpha",
+    title: "Lanka Valley Resort Website",
     description:
-      "A social media platform built to connect developers. It features a real-time chat and a project collaboration board.",
+      "A modern and responsive resort website showcasing accommodation, amenities, and booking information. The platform includes interactive galleries, location details, and a seamless user experience to help visitors explore the resort and plan their stay.",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
-    liveLink: "#", // Replace with your live demo link
-    githubLink: "https://github.com/yourusername/project-alpha",
+    liveLink: "https://www.lankavalley.in/",
   },
   {
-    title: "Project Beta",
+    title: "Service Showcase Web App",
     description:
-      "An e-commerce site for handmade goods, designed with a focus on a smooth user experience and secure payments.",
-    technologies: ["React", "TypeScript", "Stripe API", "Material-UI"],
-    liveLink: "#",
-    githubLink: "https://github.com/yourusername/project-beta",
+      "A front-end web application developed to present business services through structured sections such as services, about, and contact. The project demonstrates responsive design principles, reusable components, and modern UI practices.",
+    technologies: ["React.js", "HTML5 & CSS3", "TypeScript"],
+    liveLink: "https://magical-strudel-2e76ab.netlify.app/",
   },
   {
     title: "Portfolio Website",
     description:
       "The very portfolio you are viewing right now! Built to showcase my skills in modern frontend development and design.",
-    technologies: ["React", "TypeScript", "Material-UI", "Vite"],
+    technologies: ["React", "TypeScript", "Material-UI"],
     githubLink: "https://github.com/AravindNarayananS/profile",
   },
 ];
