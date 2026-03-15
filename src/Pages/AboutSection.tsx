@@ -76,6 +76,7 @@ const AboutSection = () => {
 
   return (
     <Box sx={{ p: { xs: 3, sm: 4 }, bgcolor: "background.paper" }}>
+      
       {/* Header */}
       <Box sx={{ mb: 4, pb: 4, borderBottom: 1, borderColor: "divider" }}>
         <Typography

@@ -1,16 +1,10 @@
 import React, { useState } from "react";
 // MUI
-import {
-  Typography,
-  Box,
-  Card,
-  CardContent,
-  Chip,
-  LinearProgress,
-} from "@mui/material";
-// Icons
+import { Typography, Box, Card, CardContent, Chip, LinearProgress } from "@mui/material";
+// icons
 import { BarChart, TrendingUp } from "@mui/icons-material";
-import { useChipStyle } from "../Components/Theme";
+//theme
+import { useChipStyle } from "../theme/theme";
 
 /* --- Reusable FlipCard Sub-component --- */
 interface SkillFlipCardProps {

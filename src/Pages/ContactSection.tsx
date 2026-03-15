@@ -8,9 +8,7 @@ import {
 } from "@mui/icons-material";
 
 function ContactSection() {
-  // Shared Monospace font style
   const mono = { fontFamily: "monospace" };
-
   // Shared Button styles to keep the JSX clean (DRY principle)
   const buttonStyle = {
     px: 3,
@@ -35,16 +33,17 @@ function ContactSection() {
           display: "flex",
           alignItems: "center",
           color: "primary.main",
-          ...mono, // Monospace applied
+          ...mono,
         }}
       >
-        <EmailIcon sx={{ mr: 1, fontSize: "1.75rem" }} /> Get In Touch
+        <EmailIcon sx={{ mr: 1, fontSize: "1.75rem" }} />
+        Get In Touch
       </Typography>
 
       {/* 2. DESCRIPTION */}
-      <Typography 
-        variant="body1" 
-        sx={{ color: "text.secondary", mb: 4, ...mono }} // Monospace applied
+      <Typography
+        variant="body1"
+        sx={{ color: "text.secondary", mb: 4, ...mono }}
       >
         I'm always open to new opportunities, collaborations, or just a friendly
         chat. Feel free to reach out!
@@ -56,6 +55,7 @@ function ContactSection() {
           display: "flex",
           flexDirection: { xs: "column", sm: "row" },
           alignItems: "center",
+          justifyContent: "center",
           gap: { xs: 2, sm: 3 },
         }}
       >

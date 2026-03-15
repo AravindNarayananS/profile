@@ -2,9 +2,10 @@
 import { Typography, Box } from "@mui/material";
 //Icons
 import { Work as WorkIcon } from "@mui/icons-material";
-
-import ProjectCard from "../Components/projectCard";
-import { projects } from "../Components/projectData";
+// component
+import ProjectCard from "../components/projectCard";
+// data
+import { projects } from "../data/projectData";
 
 const Project = () => {
   return (

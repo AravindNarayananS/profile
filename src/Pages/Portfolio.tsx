@@ -1,97 +1,17 @@
 import React, { useState, useMemo } from "react";
 //MUI
-import CssBaseline from "@mui/material/CssBaseline";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Box, Card } from "@mui/material";
-//Theme
-import { getAppTheme } from "../Components/Theme";
-// Sections / Pages
+import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider } from "@mui/material/styles";
+// Sections | Pages
 import Project from "./Project";
-import Footer from "../Components/Footer";
-import Header from "../Components/Header";
+import Footer from "../layout/Footer";
+import Header from "../layout/Header";
 import AboutSection from "./AboutSection";
 import SkillsSection from "./SkillSection";
 import ContactSection from "./ContactSection";
 import DashboardOverview from "./DashboardOverview";
-
-// THEME SETUP FUNCTION
-// const getAppTheme = (mode: "light" | "dark") =>
-//   createTheme({
-//     palette: {
-//       mode,
-//       primary: {
-//         main: mode === "light" ? "#2563eb" : "#90caf9",
-//       },
-//       secondary: {
-//         main: mode === "light" ? "#4f46e5" : "#bb86fc",
-//       },
-//       background: {
-//         default: mode === "light" ? "#f3f4f6" : "#121212",
-//         paper: mode === "light" ? "#ffffff" : "#1e1e1e",
-//       },
-//       text: {
-//         primary: mode === "light" ? "#374151" : "#e0e0e0",
-//         secondary: mode === "light" ? "#4b5563" : "#b0b0b0",
-//       },
-//     },
-//     typography: {
-//       fontFamily: "Inter, sans-serif",
-//       h1: {
-//         fontSize: "2.5rem",
-//         fontWeight: 700,
-//       },
-//       h2: {
-//         fontSize: "2rem",
-//         fontWeight: 600,
-//       },
-//       h3: {
-//         fontSize: "1.5rem",
-//         fontWeight: 600,
-//       },
-//       body1: {
-//         fontSize: "1rem",
-//         lineHeight: 1.6,
-//       },
-//       body2: {
-//         fontSize: "0.875rem",
-//       },
-//     },
-//     components: {
-//       MuiButton: {
-//         styleOverrides: {
-//           root: {
-//             borderRadius: 9999,
-//             textTransform: "none",
-//           },
-//         },
-//       },
-//       MuiCard: {
-//         styleOverrides: {
-//           root: {
-//             borderRadius: "1rem",
-//             transition: "box-shadow 0.2s ease-in-out",
-//           },
-//         },
-//       },
-//       MuiChip: {
-//         styleOverrides: {
-//           root: {
-//             borderRadius: 9999,
-//             fontWeight: 500,
-//             fontSize: "0.875rem",
-//             padding: "0.25rem 0.75rem",
-//             backgroundColor: mode === "light" ? "#dbeafe" : "#3f51b5",
-//             color: mode === "light" ? "#1e40af" : "#e0e0e0",
-//             "&:hover": {
-//               backgroundColor: mode === "light" ? "#bfdbfe" : "#5c6bc0",
-//             },
-//           },
-//         },
-//       },
-//     },
-//   });
-
-  
+import { getAppTheme } from "../theme/theme";
 
 // MAIN PORTFOLIO COMPONENT
 const PortfolioPage: React.FC = () => {
@@ -111,7 +31,7 @@ const PortfolioPage: React.FC = () => {
           minHeight: "100vh",
           background:
             mode === "light"
-              ? "linear-gradient(to bottom right, #f9fafb, #e5e7eb)"
+              ? "linear-gradient(to bottom right, #f9fafb, #f9fafb)"
               : "linear-gradient(to bottom right, #121212, #212121)",
           fontFamily: "monospace",
           color: "text.primary",

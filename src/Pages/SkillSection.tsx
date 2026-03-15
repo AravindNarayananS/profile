@@ -4,7 +4,7 @@ import React from "react";
 import { Box, Typography, Chip, useTheme } from "@mui/material";
 // Icon
 import { Code as CodeIcon } from "@mui/icons-material";
-import { useChipStyle } from "../Components/Theme";
+import { useChipStyle } from "../theme/theme";
 
 // Interface for skills group
 interface SkillGroup {
@@ -47,18 +47,6 @@ const technicalSkills: SkillGroup[] = [
 // Reusable SkillGroup Component
 const SkillGroupComponent: React.FC<{ group: SkillGroup }> = ({ group }) => {
   const theme = useTheme();
-
-  // const chipStyle = {
-  //   borderRadius: 9999,
-  //   fontWeight: 500,
-  //   fontSize: "0.875rem",
-  //   fontFamily: "monospace",
-  //   backgroundColor: theme.palette.mode === "light" ? "#dbeafe" : "#3f51b5",
-  //   color: theme.palette.mode === "light" ? "#1e40af" : "#e0e0e0",
-  //   "&:hover": {
-  //     backgroundColor: theme.palette.mode === "light" ? "#bfdbfe" : "#5c6bc0",
-  //   },
-  // };
 
   return (
     <Box sx={{ mb: 3 }}>
