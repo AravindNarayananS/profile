@@ -3,6 +3,7 @@ import React from "react";
 import profilePic from "../assets/profile-pic.jpg";
 //MUI
 import { Box, Avatar, Typography, Button, IconButton, Link } from "@mui/material";
+//icon
 import {
   GitHub as GitHubIcon,
   LinkedIn as LinkedInIcon,

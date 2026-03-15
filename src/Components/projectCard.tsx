@@ -38,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <CardContent sx={{ p: 3 }}>
 
         {/* Project Title */}
-        <Typography variant="h3" sx={{ mb: 1, color: theme.palette.text.primary, fontFamily: "monospace"}} >
+        <Typography variant="h3" sx={{ mb: 1, color: "theme.palette.text.primary", fontFamily: "monospace"}} >
             {githubLink ? (
               <Link href={githubLink} target="_blank" rel="noopener noreferrer" sx={linkStyle}>
               {title}

@@ -2,10 +2,7 @@ import React from "react";
 // MUI
 import { Typography, Button, Box } from "@mui/material";
 // Icons
-import {
-  LinkedIn as LinkedInIcon,
-  Email as EmailIcon,
-} from "@mui/icons-material";
+import { LinkedIn as LinkedInIcon, Email as EmailIcon } from "@mui/icons-material";
 
 function ContactSection() {
   const mono = { fontFamily: "monospace" };
@@ -24,7 +21,7 @@ function ContactSection() {
   };
 
   return (
-    <Box component="section" sx={{ py: 4 }}>
+    <Box component="section" sx={{ py: 1 }}>
       {/* 1. HEADER */}
       <Typography
         variant="h2"

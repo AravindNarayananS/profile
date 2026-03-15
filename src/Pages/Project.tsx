@@ -17,6 +17,7 @@ const Project = () => {
           display: "flex",
           alignItems: "center",
           color: "primary.main",
+          fontFamily: "monospace"
         }}
       >
         <WorkIcon sx={{ mr: 1, fontSize: "1.75rem" }} /> Projects
