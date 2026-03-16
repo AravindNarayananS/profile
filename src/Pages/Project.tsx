@@ -20,7 +20,7 @@ const Project = () => {
           fontFamily: "monospace"
         }}
       >
-        <WorkIcon sx={{ mr: 1, fontSize: "1.75rem" }} /> Projects
+        <WorkIcon sx={{ mr: 1, fontSize: "1.75rem" }} /> Freelance Projects
       </Typography>
       <Box
         sx={{
