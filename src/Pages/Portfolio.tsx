@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback, Suspense, lazy } from "react";
+import React, { useState, useMemo, useCallback } from "react";
 //MUI
 import { CssBaseline, ThemeProvider } from "@mui/material";
 //layout
@@ -17,7 +17,6 @@ import { ContentWrapper, MainCard, PortfolioContainer } from "../styles/Portfoli
 
 
 // Main Portfolio Page Component
-
 const PortfolioPage: React.FC = () => {
   const [mode, setMode] = useState<"light" | "dark">("dark");
 

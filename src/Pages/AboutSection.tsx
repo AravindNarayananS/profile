@@ -1,4 +1,3 @@
-// AboutSection.tsx
 import React from "react";
 // MUI
 import { Typography, Box, Link } from "@mui/material";
@@ -76,7 +75,7 @@ const AboutSection = () => {
 
   return (
     <Box sx={{ p: { xs: 3, sm: 4 }, bgcolor: "background.paper" }}>
-      
+
       {/* Header */}
       <Box sx={{ mb: 4, pb: 4, borderBottom: 1, borderColor: "divider" }}>
         <Typography
@@ -110,7 +109,7 @@ const AboutSection = () => {
           <Typography variant="body1" sx={bodyTextStyle}>
             {certifications.map((cert, i) => (
               <span key={i}>
-                {cert.name} – <strong>{cert.org}</strong>
+                {cert?.name} – <strong>{cert?.org}</strong>
                 {i !== certifications.length - 1 && " | "}
               </span>
             ))}
@@ -124,7 +123,7 @@ const AboutSection = () => {
             {technicalExpertise.map((tech, i) => (
               <span key={i}>
                 <strong>{tech}</strong>
-                {i !== technicalExpertise.length - 1 && ", "}
+                {i !== technicalExpertise?.length - 1 && ", "}
               </span>
             ))}
             .
@@ -160,18 +159,18 @@ const AboutSection = () => {
           >
             {keyAchievements.map((ach, idx) => (
               <li key={idx}>
-                {ach.text}
-                {ach.link ? (
+                {ach?.text}
+                {ach?.link ? (
                   <Link
-                    href={ach.link}
+                    href={ach?.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     underline="hover"
                   >
-                    {ach.highlight}
+                    {ach?.highlight}
                   </Link>
                 ) : (
-                  <strong>{ach.highlight}</strong>
+                  <strong>{ach?.highlight}</strong>
                 )}
               </li>
             ))}

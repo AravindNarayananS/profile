@@ -3,9 +3,9 @@ import { Typography, Box } from "@mui/material";
 //Icons
 import { Work as WorkIcon } from "@mui/icons-material";
 // component
-import ProjectCard from "../components/projectCard";
+import ProjectCard from "../components/ProjectCard";
 // data
-import { projects } from "../data/projectData";
+import { projects } from "../data/ProjectData";
 
 const Project = () => {
   return (
@@ -33,11 +33,11 @@ const Project = () => {
         {projects.map((project: any, index: any) => (
           <Box key={index} sx={{ flex: "1 1 45%", minWidth: { md: 400 } }}>
             <ProjectCard
-              title={project.title}
-              description={project.description}
-              technologies={project.technologies}
-              liveLink={project.liveLink}
-              githubLink={project.githubLink}
+              title={project?.title}
+              description={project?.description}
+              technologies={project?.technologies}
+              liveLink={project?.liveLink}
+              githubLink={project?.githubLink}
             />
           </Box>
         ))}

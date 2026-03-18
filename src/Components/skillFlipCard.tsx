@@ -2,6 +2,7 @@
 import React from "react";
 //MUI
 import { Box, Typography } from "@mui/material";
+//icons
 import { TrendingUp } from "@mui/icons-material";
 // styles
 import {

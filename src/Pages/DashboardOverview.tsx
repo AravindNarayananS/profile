@@ -13,7 +13,7 @@ import {
   ProgressWrapper,
 } from "../styles/DashboardOverview.styles";
 //component
-import SkillFlipCard from "../components/skillFlipCard";
+import SkillFlipCard from "../components/SkillFlipCard";
 
 
 const DashboardOverview: React.FC = () => {
@@ -62,9 +62,9 @@ const DashboardOverview: React.FC = () => {
           onFlip={() => toggleFlip("card2")}
         >
           {[{ name: "Java", val: 60 }, { name: "Spring Boot", val: 70 }].map((item) => (
-            <ProgressWrapper key={item.name}>
+            <ProgressWrapper key={item?.name}>
               <Typography variant="body2" sx={{ mb: 0.5, fontFamily: "monospace" }}>
-                {item.name}
+                {item?.name}
               </Typography>
               <LinearProgress variant="determinate" value={item.val} sx={{ height: 8, borderRadius: 5 }} />
             </ProgressWrapper>
